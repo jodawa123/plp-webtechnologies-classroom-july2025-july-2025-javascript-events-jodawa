@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎶Music Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="first">
+    <h1>🎵 My Playlist</h1>
+    <button id="go-add" class="like-btn">➕</button>
+  </div>
+
+  <!-- Playlist Section -->
+  <div class="playlist" id="playlist">
+    <div class="song">
+      <div class="song-card">
+        <iframe src="https://open.spotify.com/embed/track/6ZVNl5vD86IL6c4ikYgU78?utm_source=generator"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy" class="liks"></iframe>
+        <button class="like-btn">❤️</button>
+      </div>
+    </div>
+
+    <div class="song">
+      <div class="song-card">
+        <iframe src="https://open.spotify.com/embed/track/2XzHou7MZzOBQBqjWw86Nt?si=721ff9119e764d4e"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+        <button class="like-btn">❤️</button>
+      </div>
+    </div>
+
+    <div class="song">
+      <div class="song-card">
+        <iframe src="https://open.spotify.com/embed/track/6EAlFsajDK1PVgfhdJbS5Y?si=8a4a70b9579c4c6f"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+        <button class="like-btn">❤️</button>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Add Song Section -->
+  <div class="form-section">
+    <h3>Add Your Own Song</h3>
+    <input type="url" id="songURL" placeholder="Enter Spotify embed link" required>
+    <p class="error" id="errorMsg">⚠ Please fill all fields.</p>
+    <button id="addSongBtn">➕ Add Song</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
